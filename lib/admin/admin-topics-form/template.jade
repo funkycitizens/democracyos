@@ -36,7 +36,10 @@
           input.form-control(type='text', id="authorUrl", name='authorUrl', tabindex=5, placeholder='http://en.wikipedia.org/wiki/John_Doe', value=topic.authorUrl, validate='url')
         .form-group
           label= t('admin-topics-form.label.votable')
-          .votable-toggle
+          .votable-toggle          
+        .form-group
+          label= t('admin-topics-form.label.showAbstain')
+          .showAbstain-toggle         
         .form-group.hide
           label= t('admin-topics-form.label.clause-truncation-text')
           input.form-control(type='text', name='bodyTruncationText', placeholder=t('common.read-more'), value=topic.bodyTruncationText)
