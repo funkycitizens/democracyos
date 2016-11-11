@@ -44,6 +44,15 @@
           label= t('admin-topics-form.label.clause-truncation-text')
           input.form-control(type='text', name='bodyTruncationText', placeholder=t('common.read-more'), value=topic.bodyTruncationText)
         .form-group
+          label= t('admin-topics-form.label.yeaLabel')
+          input.form-control(type='text', id="yeaLabel", name='yeaLabel', tabindex=1, placeholder=t('proposal-options.yea'), value=topic.yeaLabel)
+        .form-group
+          label= t('admin-topics-form.label.nayLabel')
+          input.form-control(type='text', id="nayLabel", name='nayLabel', tabindex=1, placeholder=t('proposal-options.nay'), value=topic.nayLabel)
+        .form-group
+          label= t('admin-topics-form.label.abstainLabel')
+          input.form-control(type='text', id="abstainLabel", name='abstainLabel', tabindex=1, placeholder=t('proposal-options.abstain'), value=topic.abstainLabel)
+        .form-group
           label= t('admin-topics-form.label.source')
           input.form-control(type='url', name='source', tabindex=6, placeholder=t('admin-topics-form.placeholder.source'), value=topic.source, validate='url')
         .form-group
